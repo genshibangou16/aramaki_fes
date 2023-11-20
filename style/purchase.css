@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+#postalCode, #btnPostal, #btnQuantity, #btnBack {
+	line-height: 2em;
+	height: 2em;
+	border: none;
+	box-sizing: content-box;
+}
+
+#postalWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+#btnQuantity, #btnPostal {
+	margin: 1em calc(50% - 2em - 2px) 0;
+	width: 4em;
+	padding: 0;
+	border-radius: 5px;
+	background-color: lightblue;
+	border: black 1px solid;
+}
+
+#btnBack {
+	margin: 1em calc(50% - 2em - 2px) 0;
+	width: 4em;
+	padding: 0;
+	border-radius: 5px;
+	background-color: rgba(225,225,225,1.00);
+	border: none;
+}
+
+#postalCode {
+	padding: .5px 1em;
+	background-color: rgba(0,0,0,0.05);
+	border-radius: 5px 5px 0 0;
+	border-bottom: black 1px solid;
+}
+
+#number_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1em 0;
+	width: 100%;
+	font-size: larger;
+	gap: 2em;
+}
+
+#price {
+	text-align: center;
+	margin: 0;
+	line-height: 2em;
+}
+
+#buttons_wrapper {
+	display: flex;
+	height: 2em;
+	justify-content: center;
+	align-items: center;
+	gap: .8em;
+}
+
+#btnDown, #btnUp {
+	height: 2em;
+	width: 2em;
+	margin: 0;
+	padding: 0;
+	border-radius: 1em;
+	background-color: rgba(64,64,64,1.00);
+	border: none;
+	position: relative;
+}
+
+#minus, #plus1, #plus2 {
+	background-color: white;
+	border-radius: .1em;
+	position: absolute;
+}
+
+#minus, #plus1 {
+	width: 1.4em;
+	height: .2em;
+	top: .9em;
+	left: .3em;
+}
+
+#plus2 {
+	height: 1.4em;
+	width: .2em;
+	left: .9em;
+	top: .3em;
+}
+
+#paypal_wrapper {
+	margin: 1em 0;
+	width: 100%;
+	padding: 0;
+}
+
+#final {
+	text-align: center;
+	font-size: larger;
+}
+
+#paypal-button-container {
+	width: 100%;
+	margin: 1em 0 0 0;
+}
+
+#processing {
+	background-color: #DFF0F5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 100;
+}
+
+#processing > h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

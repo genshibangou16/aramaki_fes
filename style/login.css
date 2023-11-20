@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+form.box {
+	display: grid;
+	grid-template-columns: 1fr 4em;
+	column-gap: 1em;
+	row-gap: 1em;
+}
+
+form.box * {
+	margin: 0;
+}
+
+#form_title {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+p.form_description {
+	grid-column-start: 1;
+	grid-column-end: 3;
+    text-align: justify;
+}
+
+button.submit, input.email {
+	line-height: 2em;
+	height: 2em;
+	border: none;
+	box-sizing: content-box;
+}
+
+input.email {
+	width: calc(100% - 2em);
+	padding: .5px 1em;
+	background-color: rgba(0,0,0,0.05);
+	border-radius: 5px 5px 0 0;
+	border-bottom: black 1px solid;
+}
+
+button.submit {
+	width: 100%;
+	padding: 0;
+	border-radius: 5px;
+	background-color: lightblue;
+	border: black 1px solid;
+	color: black;
+}
+
+.error {
+    background-color: rgba(255,0,0,0.30) !important;
+}

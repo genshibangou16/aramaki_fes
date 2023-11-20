@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+table.box {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1em 0 0 0;
+}
+
+td.box, th.box {
+	border: black 1px solid;
+	text-align: center;
+}
+
+form.box {
+	display: grid;
+	grid-template-columns: 1fr 4em;
+	column-gap: 1em;
+	row-gap: 1em;
+}
+
+form.box * {
+	margin: 0;
+}
+
+#form_title {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+p.form_description {
+	grid-column-start: 1;
+	grid-column-end: 3;
+    text-align: justify;
+}
+
+button.submit, #btnBack {
+	line-height: 2em;
+	height: 2em;
+	box-sizing: content-box;
+	width: 4em;
+	padding: 0;
+	border-radius: 5px;
+	background-color: lightblue;
+	border: black 1px solid;
+	color: black;
+}
+
+.radiolabel {
+    font-size: larger;
+}
+
+#done { 
+    text-align: center;
+}
+
+#check {
+    margin: .667em 0;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#btnQuantity {
+	line-height: 2em;
+	height: 2em;
+	box-sizing: content-box;
+	margin: 1em calc(50% - 2em - 2px) 0;
+	width: 4em;
+	padding: 0;
+	border-radius: 5px;
+	background-color: lightblue;
+	border: black 1px solid;
+}
+
+.items_wrapper {
+	display: flex;
+	height: 2em;
+	justify-content: center;
+	align-items: center;
+	margin: 2em 0;
+	width: 100%;
+	gap: 2em;
+}
+
+#amount, #total {
+	font-size: larger;
+	line-height: 2em;
+	height: 2em;
+	border: none;
+	box-sizing: content-box;
+    margin: 0;
+	text-align: center;
+    width: 3em;
+	padding: .5px 1em;
+	background-color: rgba(0,0,0,0.05);
+	border-radius: 5px 5px 0 0;
+	border-bottom: black 1px solid;
+}
+
+#btnDown, #btnUp {
+	height: 2em;
+	width: 2em;
+	margin: 0;
+	padding: 0;
+	border-radius: 1em;
+	background-color: rgba(64,64,64,1.00);
+	border: none;
+	position: relative;
+}
+
+#minus, #plus1, #plus2 {
+	background-color: white;
+	border-radius: .1em;
+	position: absolute;
+}
+
+#minus, #plus1 {
+	width: 1.4em;
+	height: .2em;
+	top: .9em;
+	left: .3em;
+}
+
+#plus2 {
+	height: 1.4em;
+	width: .2em;
+	left: .9em;
+	top: .3em;
+}

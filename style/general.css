@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	min-height: 100vh;
+	height: auto;
+	width: 100%;
+	margin: 0;
+	background-color: #DFF0F5;
+	font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+#wrapper {
+	width: 100%;
+	min-height: 70vh;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+div.box, form.box {
+	width: calc(90% - 3em);
+	margin: 1em 5%;
+	background-color: rgba(255,255,255,0.40);
+	padding: 1.5em;
+	border-radius: 10px;
+}
+
+div.box > p, form.box > p {
+	margin: 1em 0 0 0;
+	text-align: justify;
+}
+
+h2.box {
+	text-align: center;
+	margin: 0;
+}
+
+footer {
+	height: max(30vh, 11em);
+	width: 100%;
+	background-color: lightyellow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+
+#footer_link_box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+#footer_sns {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+}
+
+.footer_sns_link {
+	display: block;
+	line-height: 2em;
+	height: 2em;
+}
+
+.footer_sns_image {
+	object-fit: contain;
+	width: 2em;
+	height: 2em;
+}
+
+.footer_link {
+	color: black;
+}
+
+#footer_text {
+	margin: 0;
+}
+
+input[type="submit"] {
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+.hidden {
+	display: none !important;
+}
+
+@media screen and (min-width: 800px) {
+	#wrapper {
+		width: 800px;
+		position: relative;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
